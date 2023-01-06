@@ -9,9 +9,6 @@
 #
 # Usage:
 # ./check_powerdns
-#
-# Needs:
-# jq and curl
 
 PING=$(pdns_control rping)
 
