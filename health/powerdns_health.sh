@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Name    :       check_powerdns
+# Name    :       powerdns_health
 # Pupose  :       Check PowerDNS with pdns_control
 # Version :       1.0      initial version
 # Date    :       06-01-2023
@@ -8,7 +8,7 @@
 #
 #
 # Usage:
-# ./check_powerdns
+# ./powerdns_health
 
 PING=$(/usr/bin/pdns_control rping)
 
@@ -19,6 +19,6 @@ else
     status=2
     statustxt=CRITICAL
 fi
-echo "<<<powerdns>>>"
+echo "<<<powerdns_health>>>"
 echo "$status pdns_running_status - $statustxt"
 exit $status
