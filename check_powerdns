@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Name    :       check_powerdns
+# Pupose  :       Check PowerDNS API for response
+# Version :       1.0      initial version
+# Date    :       06-01-2023
+# Autor   :       Chris van Meer <c.v.meer@atcomputing.nl>
+#
+#
+# Usage:
+# ./check_powerdns
+#
+# Needs:
+# jq and curl
+
+PING=$(pdns_control rping)
+
+if [ "$PING" = PONG ]; then
+    status=0
+    statustxt=OK
+else
+    status=2
+    statustxt=CRITICAL
+fi
+echo "<<<powerdns>>>"
+echo "$status pdns_running_status - $statustxt"
+exit $status
