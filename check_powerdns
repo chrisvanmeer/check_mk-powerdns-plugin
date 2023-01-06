@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Name    :       check_powerdns
-# Pupose  :       Check PowerDNS API for response
+# Pupose  :       Check PowerDNS with pdns_control
 # Version :       1.0      initial version
 # Date    :       06-01-2023
 # Autor   :       Chris van Meer <c.v.meer@atcomputing.nl>
