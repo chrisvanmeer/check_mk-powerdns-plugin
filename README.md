@@ -3,7 +3,7 @@
 Two PowerDNS plugins for CheckMK.  
   
 The `health` plugin does a basic health check by performing a `pdns_control rping`.  
-The `security` plugindoes a `TXT` lookup with `dig` at powerdns.com to verify the status of the installed version.   See [this article](https://blog.powerdns.com/2014/10/22/powerdns-security-status-polling/) explaining the mechanism.
+The `security` plugindoes a `TXT` lookup with `dig` at powerdns.com to verify the status of the installed version. See [this article](https://blog.powerdns.com/2014/10/22/powerdns-security-status-polling/) explaining the mechanism.
 
 ## Installation instructions
 
