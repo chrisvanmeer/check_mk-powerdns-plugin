@@ -10,7 +10,7 @@
 # Usage:
 # ./check_powerdns
 
-PING=$(pdns_control rping)
+PING=$(/usr/bin/pdns_control rping)
 
 if [ "$PING" = PONG ]; then
     status=0
