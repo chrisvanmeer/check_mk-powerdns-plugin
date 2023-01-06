@@ -1,5 +1,7 @@
 # PowerDNS check for Check_MK
 
+This is a simple plugin that will test if the PowerDNS is running by using the `pdns_control rping` command.
+
 ## Usage
 
 1. Place the `check_powerdns` file in `/urs/lib/check_mk_agent/plugins` of your PowerDNS server(s) and make it executable.
