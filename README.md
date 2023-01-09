@@ -40,9 +40,9 @@ These instructions are only for the custom checks found under `custom/`.
 
 These instructions are only for the local checks found under `local/`.
 
-1. Copy both files to `/usr/lib/check_mk_agent/local/` and do a `chmod +x` on these files.
+1. Copy the files to `/usr/lib/check_mk_agent/local/` and do a `chmod +x` on these files.
 2. Either run the agent check manually (`check_mx_agent` and watch for `<<<local`) or wait until a scheduled run has finished.
-3. Do a service discovery on your host(s) and you should see both checks appear in the Undecided section.
+3. Do a service discovery on your host(s) and you should see the checks appear in the Undecided section.
 
 Enjoy.  
 Chris
